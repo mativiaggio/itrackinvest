@@ -12,7 +12,7 @@ export function Welcome({ user }: WelcomeProps) {
         👋
       </h1>
       <p className="text-muted-foreground">
-        Comienza a gestionar la organización.
+        Comienza a registrar tus inversiones.
       </p>
     </div>
   );
