@@ -274,7 +274,7 @@ export function TicketsDataTable({ ticketsData }: TicketsDataTableProps) {
 
   return (
     <div className="w-full">
-      <div className="flex justify-between items-center py-4">
+      <div className="flex justify-between items-end py-4">
         <div className="w-1/2 gap-2 flex items-center">
           <Input
             placeholder="Filtrar por autor..."

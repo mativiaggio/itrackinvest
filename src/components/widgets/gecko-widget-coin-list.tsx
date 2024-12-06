@@ -24,7 +24,7 @@ const CryptoTickerListWidget = () => {
   }, []);
 
   return (
-    <div className="w-full h-full border border-[#212d3b] p-4 rounded-md">
+    <div className="w-full h-full border light:border-[#eff2f5] dark:border-[#212d3b] p-4 rounded-md">
       <gecko-coin-list-widget
         locale="en"
         outlined={false}
