@@ -9,7 +9,7 @@ import { UserDropdown } from "./dropdowns/user-dropdown";
 import { Button } from "./ui/button";
 import { Menu } from "./ui/navbar-menu";
 import { usePathname } from "next/navigation";
-import GeckoCryptoWidgetBar from './widgets/gecko-widget-bar';
+import GeckoCryptoWidgetBar from "./widgets/gecko-widget-bar";
 
 const Navbar: React.FC = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="relative z-10">
-      <GeckoCryptoWidgetBar/>
+      <GeckoCryptoWidgetBar />
       <div className="flex h-fit max-h-[10vh] items-center justify-between border-y px-4 py-2 sm:px-6 md:px-8 lg:px-10">
         <div className="flex w-1/6">
           <Link className="flex items-center justify-center" href="/">
@@ -48,9 +48,12 @@ const Navbar: React.FC = () => {
               <li>
                 <Link href={"/"}>Inicio</Link>
               </li>
-              {/* <li>
+              <li>
+                <Link href={"/cryptos"}>Cryptos</Link>
+              </li>
+              <li>
                 <Link href={"/portfolio"}>Portfolio</Link>
-              </li> */}
+              </li>
               <li>
                 <ModeToggle />
               </li>
@@ -113,11 +116,18 @@ const Navbar: React.FC = () => {
                       Inicio
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link onClick={() => handleCloseNavbar()} href={"/portfolio"}>
+                  <li>
+                    <Link onClick={() => handleCloseNavbar()} href={"/cryptos"}>
+                      Cryptos
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => handleCloseNavbar()}
+                      href={"/portfolio"}>
                       Portfolio
                     </Link>
-                  </li> */}
+                  </li>
                   <li className="hover:!bg-transparent">
                     <ModeToggle
                       buttonClasses="justify-start hover:!bg-transparent"
