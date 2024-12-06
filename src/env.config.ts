@@ -15,4 +15,7 @@ export const env = {
 
   // Configuración del almacenamiento (buckets)
   BUCKET_ID: process.env.NEXT_PUBLIC_BUCKET_ID || "",
+
+  // APIS
+  CMC_API_KEY: process.env.NEXT_COIN_MARKET_CAP_KEY || "",
 };

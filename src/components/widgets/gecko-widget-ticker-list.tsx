@@ -53,10 +53,10 @@ const MarketTickerWidget = () => {
   };
 
   return (
-    <div className="w-full h-full border border-[#212d3b] p-4 rounded-md">
+    <div className="w-full h-full border light:border-[#eff2f5] dark:border-[#212d3b] p-4 rounded-md">
       {/* Select para cambiar el coin-id */}
       <Select onValueChange={handleChange} defaultValue="bitcoin">
-        <SelectTrigger className="w-full border-[#212d3b]">
+        <SelectTrigger className="w-full border light:border-[#eff2f5] dark:border-[#212d3b]">
           <SelectValue placeholder="Select a coin" />
         </SelectTrigger>
         <SelectContent>
